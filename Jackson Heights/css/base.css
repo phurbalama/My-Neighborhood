@@ -1,0 +1,324 @@
+*{
+    box-sizing: :border-box;
+}
+body{
+    font-family:'Varela Round', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+    margin:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+p{
+    font-size: .95em;
+    margin-bottom: 1.8em;
+}
+h2,
+a{
+    color: black;
+}
+h2,
+h3{
+    margin:none;
+    padding: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    text-align: center;
+}
+/* ================
+Base Layout Styles
+=================*/
+/* -----Navigation-----*/
+
+
+.discover{
+    font-family: cursive;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+
+
+.textimg{
+    
+    text-align: center;
+    border: 5px solid black;
+    text-transform: uppercase;
+    
+}
+.textimg:hover{
+    background-color:black;
+    color:white;
+    
+}
+textimg h3:hover{
+    color:white;
+}
+
+
+.name {
+    font-size: 1.35em;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+
+
+.head{
+    width:100%;
+    position:fixed;
+    background-color: white;
+}
+
+.main-nav {
+    margin-top: 5px;
+  
+}
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    
+}
+
+.main-nav a {
+    font-size: .95em;
+    color: black;
+    text-transform: uppercase;
+     
+}
+.name :hover{
+    color: skyblue;
+   
+}
+.main-nav a:hover {
+    color: skyblue;
+}
+
+/*---Layout Containers--*/
+
+
+.info{
+    background-color:black;
+    font-size: 20px;
+    color:white;
+    padding: 50px;
+    font-family:arial,sans-serif;
+    font-weight: bold;
+    margin-top:0px;
+}
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+  
+  
+   
+}
+.banner,
+.main-footer{
+    text-align: center;
+}
+.banner{
+    color: #fff;
+    background: skyblue;
+    padding: 3.2em 0;
+    margin-bottom: 20px;
+    padding-top:200px;
+}
+.col{
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 10px;
+}
+.main-footer {
+    background: #d9e4ea;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+/*--two column --*/
+.twocolumn{
+    margin: auto;
+}
+.container {
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width:70%;
+    margin: auto;
+    
+}
+
+.clear {
+    clear:both;
+}
+
+.left{
+    width:800px;
+    height:600px;
+ margin-left: 10px;
+    margin-right: 10px;
+    float:left;
+    border: 3px solid black;
+    
+   
+}
+
+.right{
+    width:800px;
+    height:600px;
+    float:left;
+    border: 3px solid black;
+    background-color: deepskyblue;
+   margin-left: 10px;
+    margin-right: 10px;
+ 
+}
+.paragraph{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size:20px;
+    
+    
+}
+.box{
+    align-content: center;
+}
+.video{
+    align-content: center;
+}
+
+
+/*--Page Elements--*/
+.logo{
+    width: 190px;
+}
+.headline{
+    margin-bottom: 0;
+}
+.feat-img{
+    border-radius:5px;
+}
+
+
+/*==========
+Media Queries
+======*/
+
+@media (min-width: 769px){
+    
+    .main-header,
+    .row{
+        width:90%;
+        margin: 0 auto;
+    }
+    .tagline{
+        font-size: 1.4em;
+    }
+ 
+    
+}
+@media (min-width: 1025px){
+    
+    .main-header,
+    .row{
+        width: 80%;
+        max-width: 1150px;
+    }
+    
+}
+/*===========
+Media Queries
+========*/
+
+@media (min-width: 769px){
+    
+    .main-header,
+    .row,
+    .footer-inner,.table1{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+    .tagline {
+        font-size: 1.4em;
+    }
+    .container{
+        width:100%;
+    }
+   
+}
+
+@media (max-width: 1675px){
+    .container{
+        width:100%;
+    }
+    .right{
+        width:45%;
+        height:550px;
+        
+    }
+    .paragraph{
+        font-size: 15px;
+    }
+    .left{
+        width:45%;
+       height:550px;
+    }
+    
+    
+}
+@media(max-width:769px){
+    .head{
+        width:100%;
+    }
+    .container{
+        width:100%;
+    }
+    .right{
+        width:90%;
+        
+    }
+    .left{
+        
+        height: auto;
+        width:90%;
+    }
+   
+    .table1{
+        width:auto;
+        font-size: 9px;
+        margin-top: 50px;
+        
+        
+        }
+    .table1 img{
+        height:auto;
+    }
+    .paragraph{
+        font-size: 17px
+    }
+    .form-size{
+        margin: auto;
+        width:auto;
+    }
+    .video-container{
+        margin: auto;
+        width:30%;
+        height: 30%;
+    }
+   
+}
+
